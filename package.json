@@ -1,0 +1,64 @@
+{
+  "name": "react-js-boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "^4.23.0",
+    "axios": "^0.27.2",
+    "bootstrap": "^4.5.0",
+    "connected-react-router": "^6.9.3",
+    "font-awesome": "^4.7.0",
+    "node-sass": "^7.0.1",
+    "react": "^18.2.0",
+    "react-bootstrap-typeahead": "^6.0.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "5.0.1",
+    "redux": "^4.2.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-freeze": "^0.1.7",
+    "redux-thunk": "^2.4.1",
+    "sjs-base-model": "^2.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "---------- DEVELOPMENT ---------------------------------------------------------------------------------": "",
+    "start": "cross-env PORT=4200 CLIENT_ENV=DevelopmentEnvironment craco start",
+    "---------- TESTING -------------------------------------------------------------------------------------": "",
+    "test": "cross-env CLIENT_ENV=TestEnvironment craco test --coverage",
+    "---------- PRODUCTION ----------------------------------------------------------------------------------": "",
+    "build": "cross-env CLIENT_ENV=ProductionEnvironment craco build",
+    "predeploy": "npm run build",
+    "------------ BUILD --------------------------------------------------------------------------------------------": "",
+    "devBuild": "cross-env CLIENT_ENV=DevelopmentEnvironment craco build",
+    "testBuild": "cross-env CLIENT_ENV=TestEnvironment craco build",
+    "stageBuild": "cross-env CLIENT_ENV=StageEnvironment craco build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "craco": "0.0.3",
+    "cross-env": "^7.0.3",
+    "typescript": "^4.8.2"
+  }
+}

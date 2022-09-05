@@ -1,0 +1,49 @@
+/*==========Mobile Device=================*/
+@media (max-width: 767px) {
+  .Datacontent {
+    padding-left: 20px !important;
+    margin-left: 0 !important;
+  }
+  .w-sm-100 {
+    width: 100% !important;
+  }
+  .pull-right {
+    float: none !important;
+    text-align: center;
+  }
+  .mb-sm-2 {
+    margin-bottom: 0.5rem !important;
+  }
+  .pl50 {
+    padding-left: 0px !important;
+  }
+  .pr50 {
+    padding-right: 0px !important;
+  }
+  .tableData {
+    th,
+    td {
+      white-space: nowrap;
+    }
+  }
+}
+
+/*==========Tab Device=================*/
+
+@media (min-width: 768px) and (max-width: 992px) {
+  
+}
+
+/*==========Medium Device=================*/
+
+@media (max-width: 993px) {
+  
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  
+}
+
+@media (min-width: 1400px) {
+ 
+}
